@@ -48,29 +48,87 @@ body{
 .judul-card-makanan{
     font-weight: 900;
     font-size: 50px;
+    color : #782746;
 }
 
 .card-foto-makanan{
+    border : 8px solid white;
     border-radius: 30px;
 }
 
 .card-printilan{
     border : none;
+    background-color: transparent;
 }
 
+.card-makanan{
+  background-color: #FFC8DD;
+  border-color: #895AA3;
+  border-width: 10px;
+  border-radius: 20px;
+  box-shadow: black 0px 6px 4px;
+}
 
+.card-wisata{
+  background-color: #BDE0FE;
+  border-color: #895AA3;
+  border-width: 10px;
+  border-radius: 20px;
+  box-shadow: black 0px 6px 4px;
+}
+
+.card-event-terkini{
+  background-color: #CDB4DB;
+  border-color: #895AA3;
+  border-width: 10px;
+  border-radius: 20px;
+  box-shadow: black 0px 6px 4px;
+}
+
+.kolom-printilan{
+  background-color: none;
+}
 
 .see-detail-button{
   margin-top: -70px;
-  width: 40%;
+  width: 60%;
   border-radius: 50px;
+  border : 3px solid #782746;
+}
+
+.card-printilan button:active{
+  transform: scale(0.95);
 }
 
 .divider-bawah-card{
   margin-bottom: 60px;
+
 }
 
+.nama-card{
+  border : 3px solid #782746;
+  border-radius: 20px;
+  padding: 7px;
+  margin-bottom: 10px;
+  padding-right: 80px;
+  padding-left: 80px;
+  background-color: white;
+}
 
+.kartu-loc{
+  
+  font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 10px;
+    color: black;
+}
+
+.desc-timedate{
+  font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
 
 /* this is a recreation of twitter search in css */
 .twitter-search .form {
