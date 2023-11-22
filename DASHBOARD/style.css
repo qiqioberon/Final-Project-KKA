@@ -12,11 +12,15 @@ body{
     margin-left: -50px;
 }
 
+.linee{
+  max-width: 100px;
+}
+
 .info-loc{
   border-radius: 20px;
   border-width: 10px;
   border-color: #895AA3;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: black 0px 6px 0px;
 }
 .top-card-title{
   font-family: "Montserrat";
@@ -40,6 +44,33 @@ body{
     margin-left: -15px;
     margin-right: -15px;
 }
+
+.judul-card-makanan{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.card-foto-makanan{
+    border-radius: 30px;
+}
+
+.card-printilan{
+    border : none;
+}
+
+
+
+.see-detail-button{
+  margin-top: -70px;
+  width: 40%;
+  border-radius: 50px;
+}
+
+.divider-bawah-card{
+  margin-bottom: 60px;
+}
+
+
 
 /* this is a recreation of twitter search in css */
 .twitter-search .form {
