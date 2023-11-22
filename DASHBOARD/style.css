@@ -1,0 +1,156 @@
+body{
+    font-family: "Montserrat";
+}
+
+.judul-dashboard{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.twitter-search{
+    margin-left: -50px;
+}
+
+.info-loc{
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: #895AA3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.top-card-title{
+  font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 50px;
+    color: #DB93AE;
+}
+.main-text{
+  font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 70px;
+    color: #895AA3;
+}
+
+.burger{
+    align-self: center;
+}
+
+.panel-atas{
+    box-shadow: black 0px 4px 4px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* this is a recreation of twitter search in css */
+.twitter-search .form {
+    --input-text-color: black;
+    --input-bg-color: #283542;
+    --focus-input-bg-color: transparent;
+    --text-color: white;
+    --active-color: #1b9bee;
+    --width-of-input: 500px;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+  }
+  /* form style */
+  .twitter-search .form {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    isolation: isolate;
+  }
+  /* a fancy bg for showing background and border when focus. */
+  .twitter-search .fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 30px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  /* label styling */
+  .twitter-search label {
+    width: 100%;
+    padding: 0.8em;
+    height: 50px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+  }
+  
+  .twitter-search .search, .twitter-search .close-btn {
+    position: absolute;
+  }
+  /* styling search-icon */
+  .twitter-search .search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+  }
+  /* svg -- size */
+  .twitter-search svg {
+    width: 17px;
+    display: block;
+  }
+  /* styling of close button */
+  .twitter-search .close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* styling of input */
+  .twitter-search .input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+  }
+  
+  .twitter-search .input:focus {
+    outline: none;
+  }
+  
+  .twitter-search .input::placeholder {
+    color: var(--text-color)
+  }
+  /* input background change in focus */
+  .twitter-search .input:focus ~ .fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+  }
+  /* search icon color change in focus */
+  .twitter-search .input:focus ~ .search {
+    fill: var(--active-color);
+  }
+  /* showing close button when typing */
+  .twitter-search .input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+  }
+
+  
