@@ -242,4 +242,41 @@ body{
     -webkit-transition-delay: 9999s;
   }
 
-  
+  .about-us{
+    background-color: black;
+    padding-right: -20px;
+  }
+
+  .card-partner-tourbuddy{
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+
+  .tentang-tour-buddy button{
+    padding-top: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+
+  .tentang-tour-buddy button:active{
+    scale: 0.95;
+  }
+
+.form-group{
+  font-weight: 700;
+}
+
+.form-group input, .select-form{
+  border: none;
+  background-color: white;
+}
+
+.rencanakan{
+  background-color: #BDE0FE;
+}
+
+.form-rencana{
+  padding-left: 100px;
+  padding-right: 100px;
+}
