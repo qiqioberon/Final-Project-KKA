@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded",function(){
     const panahbawah = document.getElementById('rotateImage');
     const sidebarkanan = document.querySelector(".sidebar-right");
+    const profilkanan = document.querySelector(".profilpanelbar-atas");
     panahbawah.addEventListener("click", function(){
         sidebarkanan.classList.toggle("active");
         if(sidebarkanan.classList.contains("active")){
@@ -42,13 +43,23 @@ document.addEventListener("DOMContentLoaded",function(){
         }
     });
 
-    document.addEventListener("click", function (event) {
-        const isClickInsideSidebar = sidebarkanan.contains(event.target);
-        const isClickOnpanah = event.target.getElementById("rotateImage");
+    profilkanan.addEventListener("click", function(){
+        sidebarkanan.classList.toggle("active");
+        if(sidebarkanan.classList.contains("active")){
+            sidebarkanan.style.display = "block";
+        }
+        else{
+            sidebarkanan.style.display = "none";
+        }
+    });
 
-        if (!isClickInsideSidebar || !isClickOnpanah) {
+    document.addEventListener("click", function (event) {
+        const isClickInsideSidebar = sidebarkanan.contains(event.target) || event.target === sidebarkanan;
+    
+        if (!isClickInsideSidebar && event.target.id !== 'rotateImage' && !event.target.classList.contains("profilpanelbar-atas") && sidebarkanan.style.display === "block" && rotated) {
             sidebarkanan.style.display = "none";
             sidebarkanan.classList.remove("active");
+            rotateImage();
         }
     });
     
@@ -64,7 +75,7 @@ function rotateImage() {
         image.classList.add('rotate-180-clockwise');
     } else {
         image.classList.remove('rotate-180-clockwise');
-      image.classList.add('rotate-180');
+        image.classList.add('rotate-180');
     }
 
     // Toggle status rotasi

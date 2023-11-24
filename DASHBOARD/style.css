@@ -357,12 +357,13 @@ body{
   height: 1px;
 }
 
-.menu-menu-sidebar :hover {
+.menu-menu-sidebar :not(.divider-side-bar):hover {
 background-color: #80acd2;
 background-size: 10px;
 border-radius: 20px;
 max-width: 100%;
 cursor: pointer;
+padding: 5px;
 }
 
 
@@ -418,4 +419,12 @@ cursor: pointer;
 
 .header-sidebar-kanan{
   padding-left: 10px;
+}
+
+.printilan-sidebar-kanan:hover{
+  background-color: #BDE0FE;
+  cursor: pointer;
+  border-radius: 20px;
+  padding:5px;
+
 }
