@@ -21,13 +21,15 @@
       href="static/fonts/Montserrat/fonts/webfonts/Montserrat-Alt1.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container-fluid">
+      <nav>
       <div class="panel-atas d-flex justify-content-lg-between">
         <span class="d-flex p-2 ps-3">
           <img src="./image/Burger.png" class="burger" />
-          <p class="ms-3 judul-dashboard m-2">DASHBOARD</p>
+          <p class="ps-3 judul-dashboard m-2">DASHBOARD</p>
         </span>
         <span class="twitter-search mt-3">
           <form class="form">
@@ -70,11 +72,81 @@
             </label>
           </form>
         </span>
-        <span class="info-akun mt-2 me-2 mb-2 pe-2">
+        <span class="info-akun mt-2 me-2 mb-2 pe-2" onclick="rotateImage()">
           <img src="./image/accountIcon.png" />
-          <img src="./image/iconV.png" />
+          <img src="./image/iconV.png" id="rotateImage"/>
         </span>
       </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+      <img src="../image/logo final.png" class="logo"  >
+      <div class="menu-menu-sidebar">
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/Dashboard.png" style="background-color: transparent;">
+          <span class="fw-medium">Dashboard</span>
+        </div>
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/profil.png" style="background-color: transparent;">
+          <span class="fw-medium">Profil Pengguna</span>
+        </div>
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/Jadwal.png" style="background-color: transparent;">
+          <span class="fw-medium">Jadwal Anda</span>
+        </div>
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/Riwayat.png" style="background-color: transparent;">
+          <span class="fw-medium">Riwayat</span>
+        </div>
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/Bahasa.png" style="background-color: transparent;">
+          <span class="fw-medium">Bahasa</span>
+        </div>
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/Bantuan.png" style="background-color: transparent;">
+          <span class="fw-medium">Bantuan</span>
+        </div>
+        <div class="printilan-sidebar" onclick="handleClick()">
+          <img src="./image/Pengaturan.png" style="background-color: transparent;">
+          <span class="fw-medium">Pengaturan</span>
+        </div>
+        <div class="divider-side-bar"></div>
+        <div class="printilan-sidebar mb-5" onclick="handleClick()">
+          <img src="./image/Logout.png" style="background-color: transparent;">
+          <span class="fw-medium">Keluar</span>
+        </div>
+    </div>
+      <!-- Tambahkan menu sesuai kebutuhan -->
+    </div>
+    <div class="sidebar-right px-5" id="sidebar">
+      <img src="./image/accountIcon.png" class="profilkanan">
+      <div>
+        <div class="header-sidebar-kanan">
+          <h2>Nama Akun</h2>
+          <p>blablabla@gmail.com</p>
+        </div>
+        <div class="menu-sidebar-kanan">
+          <div class="printilan-sidebar-kanan" onclick="handleClick()">
+            <img src="./image/profil.png" style="background-color: transparent;">
+            <span class="fw-medium">Ubah Profil</span>
+          </div>
+          <div class="printilan-sidebar-kanan" onclick="handleClick()">
+            <img src="./image/Jadwal.png" style="background-color: transparent;">
+            <span class="fw-medium">History Planning</span>
+          </div>
+          <div class="printilan-sidebar-kanan" onclick="handleClick()">
+            <img src="./image/daftarplan.png" style="background-color: transparent;">
+            <span class="fw-medium">Daftar Planning</span>
+          </div>
+          <div class="printilan-sidebar-kanan" onclick="handleClick()">
+            <img src="./image/logout2.png" style="background-color: transparent;">
+            <span class="fw-medium">Logout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Tambahkan menu sesuai kebutuhan -->
+    </div>
+  
     </div>
 
     <div class="container-fluid mt-4">
@@ -623,7 +695,7 @@
       <!-- Adjust classes and styles based on your specific design -->
 
 
-    <div class="container-fluid mt-5 about-us">
+    <div class="container-fluid mt-5 mx-0 about-us">
       <div class="row">
         <div class="col-4 m-5">
           <img src="../image/logo final.png" class="w-100" />
