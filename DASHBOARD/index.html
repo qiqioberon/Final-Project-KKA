@@ -24,129 +24,163 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
       <nav>
-      <div class="panel-atas d-flex justify-content-lg-between">
-        <span class="d-flex p-2 ps-3">
-          <img src="./image/Burger.png" class="burger" />
-          <p class="ps-3 judul-dashboard m-2">DASHBOARD</p>
-        </span>
-        <span class="twitter-search mt-3">
-          <form class="form">
-            <label for="search">
-              <input
-                class="input"
-                type="text"
-                required=""
-                placeholder="Search Destination / Food / Event"
-                id="search"
-              />
-              <div class="fancy-bg"></div>
-              <div class="search">
-                <svg
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr"
-                >
-                  <g>
+        <div class="panel-atas d-flex justify-content-lg-between">
+          <span class="d-flex p-2 ps-3">
+            <img src="./image/Burger.png" class="burger" />
+            <p class="ps-3 judul-dashboard m-2">DASHBOARD</p>
+          </span>
+          <span class="twitter-search mt-3">
+            <form class="form">
+              <label for="search">
+                <input
+                  class="input"
+                  type="text"
+                  required=""
+                  placeholder="Search Destination / Food / Event"
+                  id="search"
+                />
+                <div class="fancy-bg"></div>
+                <div class="search">
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr"
+                  >
+                    <g>
+                      <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <button class="close-btn" type="reset">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path
-                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
                     ></path>
-                  </g>
-                </svg>
-              </div>
-              <button class="close-btn" type="reset">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </label>
-          </form>
-        </span>
-        <span class="info-akun mt-2 me-2 mb-2 pe-2" onclick="rotateImage()">
-          <img src="./image/accountIcon.png" class="profilpanelbar-atas"/>
-          <img src="./image/iconV.png" id="rotateImage"/>
-        </span>
+                  </svg>
+                </button>
+              </label>
+            </form>
+          </span>
+          <span class="info-akun mt-2 me-2 mb-2 pe-2" onclick="rotateImage()">
+            <img src="./image/accountIcon.png" class="profilpanelbar-atas" />
+            <img src="./image/iconV.png" id="rotateImage" />
+          </span>
+        </div>
+      </nav>
+      <div class="sidebar" id="sidebar">
+        <img src="../image/logo final.png" class="logo" />
+        <div class="menu-menu-sidebar">
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/Dashboard.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Dashboard</span>
+          </div>
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/profil.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Profil Pengguna</span>
+          </div>
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/Jadwal.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Jadwal Anda</span>
+          </div>
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/Riwayat.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Riwayat</span>
+          </div>
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/Bahasa.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Bahasa</span>
+          </div>
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/Bantuan.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Bantuan</span>
+          </div>
+          <div class="printilan-sidebar" onclick="handleClick()">
+            <img
+              src="./image/Pengaturan.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Pengaturan</span>
+          </div>
+          <div class="divider-side-bar"></div>
+          <div class="printilan-sidebar mb-5" onclick="handleClick()">
+            <img
+              src="./image/Logout.png"
+              style="background-color: transparent"
+            />
+            <span class="fw-medium">Keluar</span>
+          </div>
+        </div>
+        <!-- Tambahkan menu sesuai kebutuhan -->
       </div>
-    </nav>
-    <div class="sidebar" id="sidebar">
-      <img src="../image/logo final.png" class="logo"  >
-      <div class="menu-menu-sidebar">
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/Dashboard.png" style="background-color: transparent;">
-          <span class="fw-medium">Dashboard</span>
-        </div>
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/profil.png" style="background-color: transparent;">
-          <span class="fw-medium">Profil Pengguna</span>
-        </div>
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/Jadwal.png" style="background-color: transparent;">
-          <span class="fw-medium">Jadwal Anda</span>
-        </div>
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/Riwayat.png" style="background-color: transparent;">
-          <span class="fw-medium">Riwayat</span>
-        </div>
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/Bahasa.png" style="background-color: transparent;">
-          <span class="fw-medium">Bahasa</span>
-        </div>
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/Bantuan.png" style="background-color: transparent;">
-          <span class="fw-medium">Bantuan</span>
-        </div>
-        <div class="printilan-sidebar" onclick="handleClick()">
-          <img src="./image/Pengaturan.png" style="background-color: transparent;">
-          <span class="fw-medium">Pengaturan</span>
-        </div>
-        <div class="divider-side-bar"></div>
-        <div class="printilan-sidebar mb-5" onclick="handleClick()">
-          <img src="./image/Logout.png" style="background-color: transparent;">
-          <span class="fw-medium">Keluar</span>
-        </div>
-    </div>
-      <!-- Tambahkan menu sesuai kebutuhan -->
-    </div>
-    <div class="sidebar-right px-5" id="sidebar">
-      <img src="./image/accountIcon.png" class="profilkanan">
-      <div>
-        <div class="header-sidebar-kanan">
-          <h2>Nama Akun</h2>
-          <p>blablabla@gmail.com</p>
-        </div>
-        <div class="menu-sidebar-kanan">
-          <div class="printilan-sidebar-kanan" onclick="handleClick()">
-            <img src="./image/profil.png" style="background-color: transparent;">
-            <span class="fw-medium">Ubah Profil</span>
+      <div class="sidebar-right px-5" id="sidebar">
+        <img src="./image/accountIcon.png" class="profilkanan" />
+        <div>
+          <div class="header-sidebar-kanan">
+            <h2>Nama Akun</h2>
+            <p>blablabla@gmail.com</p>
           </div>
-          <div class="printilan-sidebar-kanan" onclick="handleClick()">
-            <img src="./image/Jadwal.png" style="background-color: transparent;">
-            <span class="fw-medium">History Planning</span>
-          </div>
-          <div class="printilan-sidebar-kanan" onclick="handleClick()">
-            <img src="./image/daftarplan.png" style="background-color: transparent;">
-            <span class="fw-medium">Daftar Planning</span>
-          </div>
-          <div class="printilan-sidebar-kanan" onclick="handleClick()">
-            <img src="./image/logout2.png" style="background-color: transparent;">
-            <span class="fw-medium">Logout</span>
+          <div class="menu-sidebar-kanan">
+            <div class="printilan-sidebar-kanan" onclick="handleClick()">
+              <img
+                src="./image/profil.png"
+                style="background-color: transparent"
+              />
+              <span class="fw-medium">Ubah Profil</span>
+            </div>
+            <div class="printilan-sidebar-kanan" onclick="handleClick()">
+              <img
+                src="./image/Jadwal.png"
+                style="background-color: transparent"
+              />
+              <span class="fw-medium">History Planning</span>
+            </div>
+            <div class="printilan-sidebar-kanan" onclick="handleClick()">
+              <img
+                src="./image/daftarplan.png"
+                style="background-color: transparent"
+              />
+              <span class="fw-medium">Daftar Planning</span>
+            </div>
+            <div class="printilan-sidebar-kanan" onclick="handleClick()">
+              <img
+                src="./image/logout2.png"
+                style="background-color: transparent"
+              />
+              <span class="fw-medium">Logout</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
       <!-- Tambahkan menu sesuai kebutuhan -->
-    </div>
-  
     </div>
 
     <div class="container-fluid mt-4">
@@ -162,6 +196,8 @@
           </div>
         </div>
       </div>
+    </div>
+    
 
       <div class="container-fluid mt-5">
         <div class="card card-makanan">
@@ -780,13 +816,15 @@
                   </div>
                 </div>
               </div>
-              <div class="card mt-xl-5 mb-xl-3" style="border: none">
+              <div class="container-fluid mb-xl-3 mx-auto text-center px-5">
+                <a href="jadwal.html" class="px-0">
                 <button
-                  class="card-body col-6 mx-auto"
+                  class="px-lg-5 py-2"
                   style="
                     background: black;
                     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 5px;
+                    border-radius: 20px;
+                    width: 80%;
                   "
                 >
                   <h1
@@ -800,6 +838,7 @@
                     COBA RENCANA INI
                   </h1>
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -877,7 +916,8 @@
                 </form>
 
                 
-                <div class="card mt-xl-5 mb-xl-3" style="border: none; background-color: transparent;">
+                <div class="mt-5 mb-xl-3 text-center" style="border: none; background-color: transparent;">
+                  <a href="jadwal.html" class="text-center mx-0 px-0">
                   <button
                     class="card-body col-6 mx-auto"
                     style="
@@ -897,6 +937,7 @@
                       KALKULASI RENCANA
                     </h1>
                   </button>
+                </a>
                   </div>
                 </div>
               </div>
