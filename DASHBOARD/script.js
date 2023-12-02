@@ -82,4 +82,17 @@ function rotateImage() {
     rotated = !rotated;
   }
 
-  
+
+  fetch("./JSON/restaurantFixed.json")
+    .then((response) => response.json())
+    .then((response) => {
+        console.log(response);
+        console.log(response[4].name);
+        let count = 0;
+        for (let i = 0; i < 3; i++) {
+            const element = response[i];
+            if (element.name !== null) {
+                console.log(element.name);
+            }
+        }           
+    })
